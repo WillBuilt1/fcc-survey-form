@@ -134,7 +134,7 @@ input:focus{
 
 #comments{
     height: 20rem;
-    width: 20rem;
+    width: 23rem;
     border-radius: 2px;
     border: 1px solid var(--blue);
     font-family: inherit;
