@@ -1,0 +1,204 @@
+/*Base*/
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --blue: rgb(15, 63, 121);
+    --gold: rgb(189, 178, 137);
+    --grey: rgb(235, 235, 235);
+    --white: #FFFFFF;
+
+    --margin: 2rem 0; 
+    --defaultFont: 2rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
+}
+
+@font-face{
+    font-family: Dusha;
+    src: url(Dusha_-_FIFA_World_Cup_2018.ttf);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    margin: 4rem auto;
+}
+
+#title{
+    text-align: center;
+    padding: 4rem;
+    color: var(--white);
+    font-family: Dusha, Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+}
+
+main{
+    margin: 0 auto;
+    width: 80%;
+    background-color: var(--grey);
+    border: 1rem solid var(--gold);
+    border-radius: 5px;
+    text-align: center;
+    color: var(--blue);
+    margin-bottom: 4rem;
+    padding: 2rem;
+    min-width: 28rem;
+}
+
+#description{
+    margin: var(--margin);
+    font-size: 3rem;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    margin: var(--margin);
+    flex-wrap: wrap;
+    
+}
+
+.fields{
+    font-size: var(--defaultFont);
+    margin-right: 5rem;
+    text-align: right;
+    margin-bottom: var(--margin);
+    flex: 1 1 27rem;
+}
+.answers{
+    text-align: left;
+    vertical-align: middle;
+    font-size: var(--defaultFont);
+    flex: 1 1 35rem;
+}
+
+.input{
+    padding: 1rem;
+    width: 23rem;
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+input:focus{
+    border: 3px solid var(--gold); 
+}
+
+.dropdown{
+    padding: 1rem;
+    width: 23rem;
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.radioStyle{
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+.checkStyle{
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    vertical-align: middle;
+
+}
+
+.checkbox{
+    text-align: left;
+    
+}
+
+#comments{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 2px;
+    border: 1px solid var(--blue);
+    font-family: inherit;
+}
+
+#comments:focus{
+    border: 3px solid var(--gold); 
+}
+
+#submit{
+    background-color: var(--blue);
+    color:var(--white);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: var(--defaultFont);
+    border: none;
+    font-family: Dusha, Arial, Helvetica, sans-serif;
+}
+
+#submit:hover{
+    background-color: rgb(36, 108, 196);
+    color: var(--grey)
+}
+
+@media screen and (max-width:920px){
+    .fields{
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+    .input{
+
+    }
+}
+
+@media screen and (max-width:650px){
+    #title{
+        font-size: 4rem
+    }
+    #description{
+        font-size: 2.5rem
+    }
+}
+@media screen and (max-width:500px){
+    header{
+        flex-direction: column;
+        align-content: center;
+    }
+    #title{
+        font-size: 3.2rem;
+        padding: 1rem
+    }
+    #description{
+        font-size: 2rem;
+    }
+    :root{
+        --defaultFont: 1.8rem;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+    
+}
+
+
+
+
+
